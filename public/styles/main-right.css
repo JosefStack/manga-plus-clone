@@ -53,7 +53,7 @@
 .leaderboard-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 }
 
 .leaderboard-header {
@@ -71,9 +71,6 @@
 .leaderboard-header > a { 
     display: flex;
     align-items: center;
-}
-
-.leaderboard-cards-wrapper {
 }
 
 .leaderboard-cards-wrapper {
@@ -123,4 +120,8 @@
 .leaderboard-card-text > :nth-child(3) {
     font-size: 12px;
     font-weight: 500;
+}
+
+.leaderboard-card-container:hover {
+    filter: brightness(0.78);
 }
