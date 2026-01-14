@@ -54,13 +54,6 @@
         height: fit-content;
     }
 
-    #main-right {
-        /* outline: 2px solid blue; */
-        width: 320px;
-        margin-left: 40px;
-        height: 500px;
-    }
-
     .left-banner {
         /* outline: 2px solid blue; */
         display: flex;

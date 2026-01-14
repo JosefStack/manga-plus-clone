@@ -257,9 +257,52 @@
                     </div>
                 </div>
 
+
+                <div class="top-cards-grid-container">
+                    
+                    <% for (let i = 0; i < mangas.length; i++) { %>
+                        <div class="card-container">
+                        <div class="banner-container">
+
+                            <div class="card-hover-banner">
+                                <div class="card-hover-banner-top">
+                                    <p><%= mangas[i].name %></p>
+                                    <p><%= mangas[i].author %></p>
+                                </div>
+                                <div class="card-hover-banner-bottom">
+                                    <p>#<%= mangas[i].rank %></p>
+                                    <p><%= mangas[i].latestChapter %></p>
+                                    <p><%= mangas[i].latestChapterName %></p>
+                                </div>
+                            </div>
+
+                            <a href="">
+                                <span class="badge">
+                                    <i class="bx bx-future"></i>
+                                    <span>Latest 24hours</span>
+                                </span>
+                                <img src="<%= mangas[i].img %>"
+                                    alt="">
+                            </a>
+
+                        </div>
+                        <div class="text-container">
+                            <a href="">
+                                <p><%= mangas[i].name %></p>
+                                <div class="analytics">
+                                    <p>#<%= mangas[i].rank %></p>
+                                    <span><%= mangas[i].likes %></span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <% } %>
+
+                    
+                </div>
+
+
+
             </div>
 
-
-            <div id="main-right">
-
-            </div>

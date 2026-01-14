@@ -1,6 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
-import { escape } from "node:querystring";
+
+// mock database
+import mangas from "./mock_database.js";
 
 const app = express();
 const port = 3000;
@@ -11,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 
 app.get("/", (req, res) => {
-    res.render("index.ejs")
+    res.render("index.ejs", { mangas })
 })
 
 

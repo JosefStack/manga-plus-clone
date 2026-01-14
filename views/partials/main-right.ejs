@@ -1,0 +1,61 @@
+<div id="main-right">
+    <div class="socials-wrapper">
+        <div class="socials-container">
+            <span>Official SNS Accounts</span>
+            <div class="links-container">
+                <a href="">
+                    <img src="https://mangaplus.shueisha.co.jp/img/x_color_logo.2985e51e.svg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQBSURBVHgBnZVNaFxVFMf/59775jNN39g0JtDFy6LgzontIojgBF0oCplsRFeJuBFEbBYFN5LJTuii6U5wkWQjXZl2YcWNHUU00GqeIogg5O0knzPJfL2Zd9+9nklMOpMopT3DmXmcd+/vnnv+hzOEHnvPaxSVwRRiW1C2jaQNkaI2sqSRlRbnBCEjJdISSFOMtDBBSnR8x4lvjfvjwTGHul/vey2PyKwKIJ+0YJhGmoFZagVZhg4KfQSSAkkSSAi4CVhX8WGSIvYQCYSly79NLpxA5y43NjgRzwGVJeIFpbVfCnJVPMY28utuhKio0JoHmh4hnBvzpxep9Fx91oKWlKXyJ39mJvEEtnnl+2LCif0wDGFEuG7QgDbRmLioxNSwJAw5tPAkwK0X7s8SOqtR1Fof9V8PFNXvKmq6KVXPq0vKehYaRf98+fTGysSqF1kzDy0KIOnBSh8Wt4Z/eWOZRBhY2+ECtoPuWkH7PtnOjEYzLy45NXdEHZzJZGfiixlt6uuw9VmiugvbDECtPEOWtq58uaFUNWjEJjf88K3x7npraqxBDRJNVzyjNjGk/g76M7zpGdpbtmLXNdSYqw/oseGf3x6LVTRGFN4BGl4UhUssSo+YNfYGexMqI/7iyzf6soyc7XlYgomduZG10uJxfHTtne7h01tXP7sP2ylsX71RuPjwern7jkSTy6H5SXMp1O9w1B99UEps5pHYxshPj4D9Cw5WQHWw2oVHwZC9wzENBbkBIdv9m5J7nrBOgP8xkgeBNQYwnZ6oZg0NumEhEptAYqd/V6YW2EzNqxSL7n9SndoU5AFIsXg90CMT/ElVYTKn1B8M79JgE7FbXzrNq7w261lnvwhVQ5wy5V6kYe2BFJRONyGS6MtIDdYXDaVnYGxx98NXNmwsFtBOValNz8eNg2skyDWghdFvV4KTTUZwvyf4YYBrmmG1srIPmlv0q5WPJyaR0jctgylSSzZswbZ45EiqoqHmnr33Vb+IPL3IJnmYZKHkOVkVWYFKKe/mSv5J3+U+XetmMV258VIBOirYZAxyRFWksJxb+ebMsDGO9KROQdhMoMSg+o6ylEdWzfK7My2Uu/5DmX/KeIxJJ36Z+OJcU1+ItLhD5yTkeTnf+rrg4Sls883ivHDiAvHEGv7xA/9wnu4vvVgSDOXagkf8Min6lRxVFdZUjRRVaH3Y25rd7rfdeDN2scs9uWdds5uYso2BAoVDVd28MD5aXgzo+LT6vcI1MSA+oqT0KNEVBEcjnJvZxvx3EHFrhzHMPvuuhtlm3+FYha9cy5Y1Lrw7evt2gH+39VnrwasFm5Z5SdI1ogs1h+BuI5qQQQddGPuWRrwdB2Yb/vDnD/xexj8uBM4PQvwVaAAAAABJRU5ErkJggg==" alt="">
+                </a>
+
+                <a href="">
+                    <img src="https://mangaplus.shueisha.co.jp/img/youtube_logo.b7a7c53a.svg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="https://mangaplus.shueisha.co.jp/img/discord_color_logo.3f8e5b57.svg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="https://mangaplus.shueisha.co.jp/img/facebook_color_logo.7fd095ad.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="leaderboard-container">
+        <div class="leaderboard-header">
+            <span>Hottest</span>
+            <a href="">
+                <span>View All</span>
+                <i class='bx  bx-chevron-right'></i> 
+            </a>
+        </div>
+
+        <div class="leaderboard-cards-wrapper">
+            <% for(let i = 0; i < mangas.length; i++) { %>
+
+                <div class="leaderboard-card-container">
+                    <a href="">
+                        <div class="leaderboard-card-img">
+                            <img src="<%= mangas[i].img %>" alt="">
+                        </div>
+                        <span><%= mangas[i].rank %></span>
+                        <div class="leaderboard-card-text">
+                            <span><%= mangas[i].name %></span>
+                            <span><%= mangas[i].author %></span>
+                            <span><%= mangas[i].likes %></span>
+                        </div>
+                    </a>
+                </div>
+
+            <% } %>
+        </div>
+    </div>
+
+
+</div>
