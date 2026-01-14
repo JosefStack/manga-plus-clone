@@ -42,7 +42,7 @@
     }
 
     .main-left {    
-        outline: 2px solid blue;
+        /* outline: 2px solid blue; */
         width: calc(100% - 360px);
         height: fit-content;
     }
@@ -339,15 +339,15 @@
     /* carousel */
 
     .carousel-container {
-        outline: 2px solid white;
+        /* outline: 2px solid white; */
         /* z-index: 9; */
-        /* overflow: hidden; */
+        overflow: hidden;
         padding: 10px;
         position: relative;
     }
 
     .carousel {
-        outline: 2px solid red;
+        /* outline: 2px solid red; */
         display: flex;
         gap: 16px;
         transition: 0.5s;
