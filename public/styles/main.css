@@ -42,7 +42,7 @@
     }
 
     .main-left {    
-        /* outline: 2px solid blue; */
+        outline: 2px solid blue;
         width: calc(100% - 360px);
         height: fit-content;
     }
@@ -338,27 +338,47 @@
 
     /* carousel */
 
-    carousel-container {
+    .carousel-container {
         outline: 2px solid white;
-        width: 94vw;
+        /* z-index: 9; */
+        /* overflow: hidden; */
+        padding: 10px;
+        position: relative;
     }
 
     .carousel {
+        outline: 2px solid red;
         display: flex;
         gap: 16px;
-        overflow: hidden;
+        transition: 0.5s;
+        /* padding: 10px; */
     }
 
     .carousel-item {
-        flex-basis: 50%;
+        flex-basis: calc(50% - 8px);
+        /* flex-basis: 50%; */
         flex-shrink: 0;
+
+        border-radius: 13px;
+        overflow: visible;
+
+        transition: 0.4s;
     }
 
     .carousel-item img {
-        width: 100%;    
+        width: 100%;   
+        border-radius: 13px; 
+        display: block;
+    }
+
+    .carousel-item-wrapper {
+        transition: 0.4s;
     }
 
 
+    .carousel-item:hover {  
+        transform: scale(1.04);
+    }
 
 
 
@@ -444,6 +464,19 @@
     
     .left-banner .badge {
         border-radius: 9px 0px 9px 0px;
+    }
+
+    .carousel {
+        /* gap: 0px; */
+    }
+    .carousel-item {
+        flex-basis: calc(100%);
+        flex-shrink: 0;
+
+        border-radius: 13px;
+        overflow: visible;
+
+        transition: 0.4s;
     }
 
 }
