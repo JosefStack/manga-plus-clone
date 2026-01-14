@@ -66,3 +66,9 @@ Just tell me what you want to tasckle next 🚀
 
 
  --- search google for unicode ---
+
+
+
+
+ why doesnt the media query i apply on main-left
+ work on main-right? (for #main-right {display:none})

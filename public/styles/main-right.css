@@ -125,3 +125,15 @@
 .leaderboard-card-container:hover {
     filter: brightness(0.78);
 }
+
+
+
+
+
+@media(max-width:1280px) {
+
+    #main-right {
+        display: none;
+    }
+    
+}

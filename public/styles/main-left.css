@@ -387,6 +387,7 @@
     /* responsiveness */
 
 @media(max-width:1280px) {
+
     #main-right {
         display: none;
     }
