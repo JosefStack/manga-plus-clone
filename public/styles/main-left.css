@@ -461,22 +461,12 @@
         border-radius: 9px;
     }
 
-    
     .left-banner .badge {
         border-radius: 9px 0px 9px 0px;
     }
 
-    .carousel {
-        /* gap: 0px; */
-    }
     .carousel-item {
-        flex-basis: calc(100%);
-        flex-shrink: 0;
-
-        border-radius: 13px;
-        overflow: visible;
-
-        transition: 0.4s;
+        flex-basis: 100%;
     }
 
 }
