@@ -126,6 +126,19 @@
     filter: brightness(0.78);
 }
 
+.viewAllContainer {
+    outline: 1px solid white;
+    border-radius: 9px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.viewAllContainer i {
+    font-size: 30px;
+}
 
 
 
